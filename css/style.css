@@ -1,0 +1,128 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  font-family: "Outfit";
+  font-weight: 300;
+}
+
+/* First Block Section */
+.parent-block {
+  background-color: hsl(216, 50%, 16%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.07);
+}
+
+/* Image Section */
+.image-block{
+  width: 17rem;
+  padding: 7% 0 0 7%;
+  border-radius: 10px ;
+}
+
+ .image-block-2{
+   background-color: hsl(178, 100%, 50%, 0.5);
+   width: 17rem;
+   height: 17rem;
+   border-radius: 10px ;
+   position: absolute;
+   bottom: 17.85rem;
+   left: 1.4rem;
+   opacity: 0;
+ }
+
+ .image-icon{
+     padding: 40% 0 0 40%;
+ }
+
+/* Text Section */
+.text-block {
+  padding: 0 7%;
+}
+
+h3 {
+  color: #fff;
+  font-weight: 600;
+}
+
+.right-text, p {
+  display: inline-block;
+}
+
+.right-text {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+  padding-right: 30%;
+}
+
+hr {
+  border-style: none;
+  border-top-style: solid;
+  border-width: 0.25px;
+}
+
+/* Foot Section */
+.foot-block {
+  padding: 0 7% 7% 7%;
+}
+
+.foot-left-text {
+  color: #fff;
+}
+
+.image-avatar {
+  width: 2rem;
+  position: absolute;
+  bottom: 5.5%;
+  border: 2px solid;
+  border-radius: 50%;
+  border-color: #fff;
+}
+
+.foot-right-text {
+  padding-left: 18%;
+}
+
+/* Hover Section */
+.image-block-2:hover{
+  opacity: 1;
+}
+
+h3:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.foot-left-text:hover{
+  color: hsl(178, 100%, 50%);
+}
+
+/* Mobile Responsive Section */
+@media (max-width:630px) {
+  body{
+    font-size: 0.7rem;
+  }
+  .parent-block {
+     width: 15rem;
+     height: 25rem;
+  }
+  .image-block{
+    width: 12rem;
+  }
+
+  .image-block-2{
+    width: 12rem;
+    height: 12rem;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .right-text, .left-text, hr, .foot-right-text, .foot-left-text {
+    position: relative;
+    bottom: 1.25rem;
+  }
+
+}
